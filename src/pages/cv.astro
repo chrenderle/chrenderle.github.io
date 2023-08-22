@@ -1,0 +1,162 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Bachelor of Science: Computer Science"
+      subtitle="2018 to 2021 at DHBW Stuttgart, Stuttgart, Germany"
+    />
+    <TimeLineElement
+      title="Allgemeinbildendes Abitur i.e. High School Graduation"
+      subtitle="Finished 08.2018 at Gymnasium Plochingen, Plochingen, Germany"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Part of Pre-Study: Use of Rust at Bosch"
+      subtitle="From 02.2023 to planned 11.2023 at Robert Bosch GmbH, Reutlingen, Germany"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+          <p>Investigation of the use of Rust at Bosch</p>
+        </li>
+        <li>
+          <p>Comparison and review need for MISRA-C compared to Rust</p>
+        </li>
+        <li>
+          <p>Case Study with Bosch eBike (Rust on an ECU)</p>
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Function- and Software-Developer"
+      subtitle="From 11.2021 to now at Robert Bosch GmbH, Schwieberdingen, Germany"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+          <p>Requirements engineering with IBM DOORS</p>
+        </li>
+        <li>
+          <p>Software design with IBM Rational Rhapsody</p>
+        </li>
+        <li>
+          <p>Development of AUTOSAR Classic software in C</p>
+        </li>
+        <li>
+          <p>Unit-tests with TPT</p>
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Dual Study - Departmental Assignment"
+      subtitle="From 01.2021 to 09.2021 at Robert Bosch GmbH, Leonberg, Germany"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+          <p>Creation of a test-sw for an embedded Linux system</p>
+        </li>
+        <li>
+          <p>Setup of camera and video processing for an embedded Linux system</p>
+        </li>
+        <li>
+          <p>Embedded Linux system built with Yocto Project</p>
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Dual Study - Departmental Assignment"
+      subtitle="From 01.2021 to 09.2021 at Robert Bosch GmbH, Leonberg, Germany"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+          <p>Creation of load- and performance-tests</p>
+        </li>
+        <li>
+          <p>Development in Python and JavaScript (NodeJS)</p>
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Dual Study - Departmental Assignment"
+      subtitle="From 01.2021 to 09.2021 at Robert Bosch GmbH, Leonberg, Germany"
+    >
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+          <p>3D-modelling and programming of a prototype for demonstrations</p>
+        </li>
+        <li>
+          <p>Development for Arduino in C/C++</p>
+        </li>
+      </ul>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Languages</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <p>German: fluent</p>
+    </li>
+    <li>
+      <p>English: proficient</p>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 gap-2 grid">
+    <li>Rust</li>
+    <li>C/C++</li>
+    <li>Arduino</li>
+    <li>Docker</li>
+    <li>Linux</li>
+    <li>Python</li>
+    <li>C#</li>
+    <li>Bash</li>
+    <li>HTML</li>
+    <li>JavaScript</li>
+    <li>CSS</li>
+    <li><p>Ansible</p></li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Extracurricular Activity</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6 gap-2 grid">
+    <li>Table Tennis TV Hochdorf</li>
+    <li>Skiing</li>
+    <li>Windsurfing</li>
+    <li>Linux-Homeserver</li>
+    <li>Calisthenics</li>
+    <li>Table Tennis Youth Coach</li>
+    <li>Salsa and Bachata Dancing</li>
+  </ul>
+</BaseLayout>
