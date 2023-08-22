@@ -8,5 +8,12 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://chrenderle.de',
+  site: 'https://chrenderle.github.io',
+  integrations: [mdx(), sitemap(), tailwind(), image(
+    {
+      serviceEntryPoint: '@astrojs/image/sharp',
+      cacheDir: "./.cache/image",
+      logLevel: 'debug',
+    }
+  )]
 });
